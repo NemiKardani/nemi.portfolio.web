@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0;url=./">
     <script>
-      // Redirect to the base URL or root page
+      // Unregister any service worker for 404 page to avoid caching issues in Safari
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+      // Redirect to base URL or root page
       window.location.href = './';
     </script>
   </head>
