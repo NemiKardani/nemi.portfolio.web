@@ -3,17 +3,18 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "6071337cde808ddf299f69a65b5f2f93",
+const RESOURCES = {"flutter_bootstrap.js": "ac45b05ca84630f82c7019e3f3cd4e92",
 "version.json": "3385ff20cba9e3c8a39adab4e458f1ff",
-"index.html": "6bda0c601c738ff6208b69d41c9e4036",
-"/": "6bda0c601c738ff6208b69d41c9e4036",
+"index_backup.html": "5c9342739d33bd52bc4c4b3eaf754148",
+"index.html": "90e43a12ada01fead6b49786f726b442",
+"/": "90e43a12ada01fead6b49786f726b442",
 "main.dart.js": "c2516dd7f4383dd068d65d26d41b3442",
 "flutter.js": "383e55f7f3cce5be08fcf1f3881f585c",
 "icons/logo-aerium-1.png": "c9c1749b275f61ebc563d6596ccf2569",
 "icons/logo-aerium-2.png": "58b131c1e81194452cb702693c040a92",
 "manifest.json": "8be166176a7e8cfedbedd304e49d0d91",
 "assets/AssetManifest.json": "89c22bb94078c9e76678a130c0048026",
-"assets/NOTICES": "604772dafc68dc7b44950aac77e47e62",
+"assets/NOTICES": "bea80fe262406bf62d3a6cd20d860b29",
 "assets/FontManifest.json": "a78f950d25c1e29b92a4a309465e60cd",
 "assets/AssetManifest.bin.json": "2b267570b43eee7bd1b71ac3abd9e482",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "e986ebe42ef785b27164c36a9abc7818",

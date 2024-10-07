@@ -1,144 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <!-- <base href="/"> -->
-
+  <base href="/">
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Portfolio website for Nemi Kardani. This portfolio chowcases his education, skills & expertise, experience, acheivements and hobbies.">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" 
+  content="Portfolio website for Nemi Kardani. This portfolio showcases his education, skills & expertise, experience, achievements, and hobbies.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Nemi Kardani Portfolio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="icons/logo-nemi_portfolio-2.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="icons/logo-nemi_portfolio-2.png"/>
 
   <title>Nemi Kardani Portfolio</title>
+  
+  <!-- Manifest for PWA -->
   <link rel="manifest" href="manifest.json">
-
-  <script type="application/javascript">
-    function openLink(url, target, isAsync=false) {
-      var is_safari = /^(?!.*chrome).*safari/i.test(navigator.userAgent.toLowerCase());
-      if (is_safari && isAsync) {
-        window.location.href = url;
-      } else {
-        window.open(url, target);
-      }
-    }
-  </script>
-
-  <!-- <video controls>
-    <source type="video/webm" src="data:video/webm;base64,GkXfowEAAAAAAAAfQoaBAUL3gQFC8......jVOrhB9DtnVTrIMQTPc=">
-    <source type="video/mp4" src="data:video/mp4;base64,AAAAHGZ0eXBtcDQyAAAAAG1wNDJpc29....../l/L+X8v5AAAAMgfDg==">
-</video> -->
-
-<style>
-  /* Add some basic styling to our loading animation */
-  .loader {
-    
-width: 48px;
-height: 48px;
-border-radius: 50%;
-display: inline-block;
-border-top: 4px solid #FFF;
-border-right: 4px solid transparent;
-box-sizing: border-box;
-animation: rotation 2s linear infinite;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-.parent-container {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.loader::after {
-content: '';  
-box-sizing: border-box;
-position: absolute;
-left: 0;
-top: 0;
-width: 48px;
-height: 48px;
-border-radius: 50%;
-border-left: 4px solid #0a0735;
-border-bottom: 4px solid transparent;
-animation: rotation 0.5s linear infinite reverse;
-}
-@keyframes rotation {
-0% {
-  transform: rotate(0deg);
-}
-100% {
-  transform: rotate(360deg);
-}
-} 
-
-</style>
-
 </head>
-
-<!-- <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDgzwLmjFHuAMrACC6--9Hbz8B6oWZ9to8",
-    authDomain: "m-and-r-education.firebaseapp.com",
-    projectId: "m-and-r-education",
-    storageBucket: "m-and-r-education.appspot.com",
-    messagingSenderId: "623408932792",
-    appId: "1:623408932792:web:efc241f52f45069b42514d",
-    measurementId: "G-ZQKW8SRBM2"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script> -->
-<!-- <body>
-  <script src="flutter_bootstrap.js" async></script>
-</body> -->
 <body>
-  <!-- Add a div for our loading animation -->
-  <div class="loader">
-    <div></div>
-  </div>
+  <!-- Use flutter.js for service worker bootstrapping -->
+  <script src="flutter.js" defer></script>
 
-  <!-- Remove the async attribute from the script tag so that the script is executed before the loading animation is removed -->
-  <script src="flutter_bootstrap.js"></script>
-
-  <!-- Add a script to remove the loading animation once the app is loaded -->
-  <script>
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.querySelector('.loading-animation').remove();
-      }, 10000); // 10000 milliseconds = 10 seconds
-    });
-  </script>
+  <!-- Flutter Bootstrap -->
+  <script src="flutter_bootstrap.js" defer></script>
 </body>
 </html>
