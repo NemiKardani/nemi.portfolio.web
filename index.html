@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- <base href="/"> -->
+  <base href="/">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" 
-  content="Portfolio website for Nemi Kardani. This portfolio showcases his education, skills & expertise, experience, achievements, and hobbies.">
-
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio website for Nemi Kardani. This portfolio showcases his education, skills & expertise, experience, achievements, and hobbies.">
+  <meta name="keywords" content="Nemi Kardani, Portfolio, Full Stack Developer, Software Engineer, Mobile App Developer, Flutter,Dart,Flutter Web Portfulio, DevOps">
+  <meta name="author" content="Nemi Kardani">
+  
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Nemi Kardani Portfolio">
-  <link rel="apple-touch-icon" href="icons/logo-nemi_portfolio-2.png">
+  <link rel="apple-touch-icon" href="icons/Icon-nemi-kardani-social-preview.png">
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="icons/logo-nemi_portfolio-2.png"/>
 
+  <!-- Social Media Meta Tags (Open Graph) -->
+  <meta property="og:title" content="Nemi Kardani Portfolio | Full Stack Developer">
+  <meta property="og:description" content="Explore Nemi Kardani's portfolio, showcasing his expertise in software development, mobile app development, and DevOps.">
+  <meta property="og:image" content="https://nemikardani-portfulio.netlify.app/assets/assets/images/Icon-nemi-kardani-social-preview.png"> <!-- Add a preview image -->
+  <meta property="og:url" content="https://nemikardani-portfulio.netlify.app">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="https://nemikardani-portfulio.netlify.app/assets/assets/images/Icon-nemi-kardani-social-preview.png">
+  <meta name="twitter:title" content="Nemi Kardani Portfolio | Full Stack Developer">
+  <meta name="twitter:description" content="Check out Nemi Kardani's projects and expertise in mobile and web development.">
+  <meta name="twitter:image" content="https://nemikardani-portfulio.netlify.app/assets/assets/images/Icon-nemi-kardani-social-preview.png">
+
+  <!-- Title -->
   <title>Nemi Kardani Portfolio</title>
   
   <!-- Manifest for PWA -->
@@ -24,20 +41,19 @@
 
   <!-- Loader CSS -->
   <style>
-    /* Center loader and set dark background */
     body {
       margin: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #121212; /* Dark background */
+      background-color: #121212;
     }
 
     .loader {
       width: 40px;
       height: 20px;
-      --c:no-repeat radial-gradient(farthest-side,#fff 93%,#0000); /* White loader */
+      --c:no-repeat radial-gradient(farthest-side,#fff 93%,#0000);
       background:
         var(--c) 0    0,
         var(--c) 50%  0;
@@ -52,7 +68,7 @@
       position: absolute;
       width: 8px;
       height: 12px;
-      background: #fff; /* White loader block */
+      background: #fff;
       left: -16px;
       top: 0;
       animation: 
@@ -67,7 +83,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: #fff; /* White bouncing ball */
+      background: #fff;
       animation: l6-3 1.5s linear infinite;
     }
 
