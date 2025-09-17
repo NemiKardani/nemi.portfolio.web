@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/nemi_s_mac/Downloads/futuristic-portfolio/app/layout":["static/media/4cf2300e9c8272f7-s.p.woff2","static/media/4c9affa5bc8f420e-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
